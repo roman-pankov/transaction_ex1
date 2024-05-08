@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Оформление заказа</h1>
+    <form action="/make-order" method="post">
+        <label for="userId">ID пользователя:</label><br>
+        <input type="text" id="userId" name="userId"><br>
+        <label for="productId">ID продукта:</label><br>
+        <input type="text" id="productId" name="productId"><br>
+        <label for="processingTime">Задержка создания заказа (в секундах):</label><br>
+        <input type="text" id="processingTime" name="processingTime"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
