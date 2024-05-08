@@ -12,7 +12,7 @@ type OrderUsecase struct {
 	orderRepo   *repo.OrderRepo
 }
 
-func NewByProductUsecase(
+func NewOrderUsecase(
 	productRepo *repo.ProductRepo,
 	userRepo *repo.UserRepo,
 	orderRepo *repo.OrderRepo,

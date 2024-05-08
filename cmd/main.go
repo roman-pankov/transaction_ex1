@@ -39,7 +39,7 @@ func main() {
 	productRepo := repo.NewProductRepo(db)
 	userRepo := repo.NewUserRepo(db)
 	orderRepo := repo.NewOrderRepo(db)
-	orderUsecase := handler.NewByProductUsecase(productRepo, userRepo, orderRepo)
+	orderUsecase := handler.NewOrderUsecase(productRepo, userRepo, orderRepo)
 
 	http.HandleFunc("/", formHandler)
 	http.HandleFunc("/make-order", makeOrderHandler(orderUsecase, db))
